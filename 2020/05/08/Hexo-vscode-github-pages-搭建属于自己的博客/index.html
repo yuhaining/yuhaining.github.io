@@ -81,11 +81,9 @@
 <div class="main">
     <div class="content-inner">
         <div class="posts">
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2020/05/08/Hexo-vscode-github-pages-%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">Hexo + vscode + github pages 搭建属于自己的博客</a></h2>
-            </div>
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">Hexo + vscode + github pages 搭建属于自己的博客</h2>
             <div class="post-meta">
                 <span class="post-time">2020-05-08</span>
                 
@@ -95,10 +93,18 @@
                     
                 </span>
                 
+                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
             </div>
-            <div class="post-content">
-                
-                    <p>Hexo是高效的静态站点生成框架，它基于 Node.js。通过 Hexo，你可以直接使用 Markdown 语法来撰写博客。本文搭建的环境是 Windows10。</p>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-text">安装 Node.js</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-text">安装 Git 与 vscode</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-text">创建 GitHub Pages</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-text">vscode建工程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-text">将 hexo 与 github 关联起来</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-text">写博客</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-text">自定义博客的个人信息</span></a></li></ol>
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <p>Hexo是高效的静态站点生成框架，它基于 Node.js。通过 Hexo，你可以直接使用 Markdown 语法来撰写博客。本文搭建的环境是 Windows10。</p>
 <h1><span id="an-zhuang-node-js">安装 Node.js</span><a href="#an-zhuang-node-js" class="header-anchor"></a></h1><p>首先下载稳定版 Node.js：<a href="https://nodejs.org/en/download/。" target="_blank" rel="noopener">https://nodejs.org/en/download/。</a><br>安装选项全部默认，一路点击 Next。</p>
 <p>在 Windows PowerShell 中输入：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> node -v</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm -v</span></span><br></pre></td></tr></table></figure>
@@ -181,297 +187,29 @@
 <p>来源: 上善若水<br>文章作者: 刘新伟<br>文章链接: <a href="https://xinetzone.github.io/zh-CN/41cccb40.html" target="_blank" rel="noopener">https://xinetzone.github.io/zh-CN/41cccb40.html</a><br>本文章著作权归作者所有，任何形式的转载都请注明出处。</p>
 </blockquote>
 
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2020/05/08/Markdown%E4%BB%A3%E7%A0%81%E5%9D%97%E6%94%AF%E6%8C%81%E7%9A%84%E8%AF%AD%E8%A8%80/">Markdown代码块支持的语言</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2020-05-08</span>
-                
-                <span class="post-category">
-                    
-                    <a class="category" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-                    
-                </span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <table>
-<thead>
-<tr>
-<th>名称</th>
-<th>关键字</th>
-<th>调用的js</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>AppleScript</td>
-<td>applescript</td>
-<td>shBrushAppleScript.js</td>
-<td></td>
-</tr>
-<tr>
-<td>ActionScript 3.0</td>
-<td>actionscript3, as3</td>
-<td>shBrushAS3.js</td>
-<td></td>
-</tr>
-<tr>
-<td>Shell</td>
-<td>bash,shell</td>
-<td>shBrushBash.js</td>
-<td></td>
-</tr>
-<tr>
-<td>ColdFusion</td>
-<td>coldfusion,cf</td>
-<td>shBrushColdFusion.js</td>
-<td></td>
-</tr>
-<tr>
-<td>C</td>
-<td>cpp,c</td>
-<td>shBrushCpp.js</td>
-<td></td>
-</tr>
-<tr>
-<td>C#</td>
-<td>c#,c-sharp,csharp</td>
-<td>shBrushCSharp.js</td>
-<td></td>
-</tr>
-<tr>
-<td>CSS</td>
-<td>css</td>
-<td>shBrushCss.js</td>
-<td></td>
-</tr>
-<tr>
-<td>Delphi</td>
-<td>delphi,pascal,pas</td>
-<td>shBrushDelphi.js</td>
-<td></td>
-</tr>
-<tr>
-<td>diff&amp;patch</td>
-<td>diff</td>
-<td>patch</td>
-<td>shBrushDiff.js</td>
-</tr>
-<tr>
-<td>Erlang</td>
-<td>erl,erlang</td>
-<td>shBrushErlang.js</td>
-<td></td>
-</tr>
-<tr>
-<td>Groovy</td>
-<td>groovy</td>
-<td>shBrushGroovy.js</td>
-<td></td>
-</tr>
-<tr>
-<td>Java</td>
-<td>java</td>
-<td>shBrushJava.js</td>
-<td></td>
-</tr>
-<tr>
-<td>JavaFX</td>
-<td>jfx,javafx</td>
-<td>shBrushJavaFX.js</td>
-<td></td>
-</tr>
-<tr>
-<td>JavaScript</td>
-<td>js,jscript,javascript</td>
-<td>shBrushJScript.js</td>
-<td></td>
-</tr>
-<tr>
-<td>Perl</td>
-<td>perl,pl,Perl</td>
-<td>shBrushPerl.js</td>
-<td></td>
-</tr>
-<tr>
-<td>PHP</td>
-<td>php</td>
-<td>shBrushPhp.js</td>
-<td></td>
-</tr>
-<tr>
-<td>text</td>
-<td>text,plain</td>
-<td>shBrushPlain.js</td>
-<td>就是普通文本.</td>
-</tr>
-<tr>
-<td>Python</td>
-<td>py,python</td>
-<td>shBrushPython.js</td>
-<td></td>
-</tr>
-<tr>
-<td>Ruby</td>
-<td>ruby,rails,ror,rb</td>
-<td>shBrushRuby.js</td>
-<td></td>
-</tr>
-<tr>
-<td>SASS&amp;SCSS</td>
-<td>sass,scss</td>
-<td>shBrushSass.js</td>
-<td></td>
-</tr>
-<tr>
-<td>Scala</td>
-<td>scala</td>
-<td>shBrushScala.js</td>
-<td></td>
-</tr>
-<tr>
-<td>SQL</td>
-<td>sql</td>
-<td>shBrushSql.js</td>
-<td></td>
-</tr>
-<tr>
-<td>Visual Basic</td>
-<td>vb,vbnet</td>
-<td>shBrushVb.js</td>
-<td></td>
-</tr>
-<tr>
-<td>XML</td>
-<td>xml,xhtml,xslt,html</td>
-<td>shBrushXml.js</td>
-<td></td>
-</tr>
-<tr>
-<td>Objective C</td>
-<td>objc,obj-c</td>
-<td>shBrushObjectiveC.js</td>
-<td></td>
-</tr>
-<tr>
-<td>F#</td>
-<td>f#,f-sharp,fsharp</td>
-<td>shBrushFSharp.js</td>
-<td></td>
-</tr>
-<tr>
-<td>xpp,dynamics-xpp</td>
-<td>shBrushDynamics.js</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>R</td>
-<td>r,s,splus</td>
-<td>shBrushR.js</td>
-<td></td>
-</tr>
-<tr>
-<td>matlab</td>
-<td>matlab</td>
-<td>shBrushMatlab.js</td>
-<td></td>
-</tr>
-<tr>
-<td>swift</td>
-<td>swift</td>
-<td>shBrushSwift.js</td>
-<td></td>
-</tr>
-<tr>
-<td>GO</td>
-<td>go,golang</td>
-<td>shBrushGo.js</td>
-<td></td>
-</tr>
-</tbody></table>
-
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2020/05/08/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Hexo常用命令</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2020-05-08</span>
-                
-                <span class="post-category">
-                    
-                    <a class="category" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-                    
-                </span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <h1><span id="hexo-init">hexo init</span><a href="#hexo-init" class="header-anchor"></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folder]</span><br><span class="line">命令用于初始化本地文件夹为网站的根目录  </span><br><span class="line">folder 可选参数，用以指定初始化目录的路径，若无指定则默认为当前目录</span><br></pre></td></tr></table></figure>
-<h1><span id="hexo-new">hexo new</span><a href="#hexo-new" class="header-anchor"></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br><span class="line">命令用于新建文章，一般可以简写为 hexo n  </span><br><span class="line">layout 可选参数，用以指定文章类型，若无指定则默认由配置文件中的 default_layout 选项决定  </span><br><span class="line">title 必填参数，用以指定文章标题，如果参数值中含有空格，则需要使用双引号包围</span><br></pre></td></tr></table></figure>
-<h1><span id="hexo-generate">hexo generate</span><a href="#hexo-generate" class="header-anchor"></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">命令用于生成静态文件，一般可以简写为 hexo g  </span><br><span class="line">-d 选项，指定生成后部署，与 hexo d -g 等价</span><br></pre></td></tr></table></figure>
-<h1><span id="hexo-server">hexo server</span><a href="#hexo-server" class="header-anchor"></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">命令用于启动本地服务器，一般可以简写为 hexo s  </span><br><span class="line">-p 选项，指定服务器端口，默认为 4000  </span><br><span class="line">-i 选项，指定服务器 IP 地址，默认为 0.0.0.0  </span><br><span class="line">-s 选项，静态模式 ，仅提供 public 文件夹中的文件并禁用文件监视</span><br></pre></td></tr></table></figure>
-<p>说明 ：运行服务器前需要安装 hexo-server 插件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
-<h1><span id="hexo-deploy">hexo deploy</span><a href="#hexo-deploy" class="header-anchor"></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line">命令用于部署网站，一般可以简写为 hexo d  </span><br><span class="line">-g 选项，指定生成后部署，与 hexo g -d 等价</span><br></pre></td></tr></table></figure>
-<p>说明 ：部署前需要修改 _config.yml 配置文件，下面以 git 为例进行说明</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repo: &lt;repository url&gt;</span><br><span class="line">	branch:	master</span><br><span class="line">	message: 自定义提交消息，默认为Site updated: &#123;&#123; now(&#39;YYYY-MM-DD HH:mm:ss&#39;) &#125;&#125;</span><br></pre></td></tr></table></figure>
-<h1><span id="hexo-clean">hexo clean</span><a href="#hexo-clean" class="header-anchor"></a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">命令用于清理缓存文件，是一个比较常用的命令  </span><br><span class="line">网站显示异常时可尝试此操作</span><br></pre></td></tr></table></figure>
-
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2020/05/08/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%94%A8markdown%E5%86%99%E7%9A%84%E6%96%87%E7%AB%A0%EF%BC%8C%E5%9C%A8%E9%A6%96%E9%A1%B5%E7%BC%A9%E7%95%A5%E5%9B%BE%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/">hexo博客中用markdown写的文章，在首页缩略图显示问题</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2020-05-08</span>
-                
-                <span class="post-category">
-                    
-                    <a class="category" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-                    
-                </span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <h1><span id="she-zhi-zi-yuan-wen-jian-jia">设置资源文件夹</span><a href="#she-zhi-zi-yuan-wen-jian-jia" class="header-anchor"></a></h1><p>资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，那最简单的方法就是将它们放在 source/images 文件夹中。然后通过类似于 <img src="/images/image.jpg" alt> 的方法访问它们。</p>
-<p>文章资源文件夹<br>对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo也提供了更组织化的方式来管理资源。这个稍微有些复杂但是管理资源非常方便的功能可以通过将 config.yml 文件中的 post_asset_folder 选项设为 true 来打开。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">修改成</span><br><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
-<p>当资源文件管理功能打开后，Hexo将会在你每一次通过 hexo new [layout] title 命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。</p>
-<h1><span id="zhu-ye-bu-xian-shi-suo-lue-tu-wen-ti">主页不显示缩略图问题</span><a href="#zhu-ye-bu-xian-shi-suo-lue-tu-wen-ti" class="header-anchor"></a></h1><p>相对路径引用的标签插件<br>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。在Hexo 2时代，社区创建了很多插件来解决这个问题。但是，随着Hexo 3 的发布，许多新的标签插件被加入到了核心代码中。这使得你可以更简单地在文章中引用你的资源。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br></pre></td></tr></table></figure>
-<p>比如说：当你打开文章资源文件夹功能后，你把一个 example.jpg 图片放在了你的资源文件夹中，如果通过使用相对路径的常规 markdown 语法 <img src="/example.jpg" alt> ，它将 不会 出现在首页上。（但是它会在文章中按你期待的方式工作）</p>
-<p>正确的引用图片方式是使用下列的标签插件而不是 markdown ：</p>
-
-<p>1<br>通过这种方式，图片将会同时出现在文章和主页以及归档页中。通过<br>如：</p>
-<img src="/2020/05/08/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%94%A8markdown%E5%86%99%E7%9A%84%E6%96%87%E7%AB%A0%EF%BC%8C%E5%9C%A8%E9%A6%96%E9%A1%B5%E7%BC%A9%E7%95%A5%E5%9B%BE%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/23935d06.jpg" class title="这是用标签插件引用的图片">
-                
-            </div>
-        </article>
-    
+        </div>
+        
+        <div class="post-tag">
+            
+            <a class="tag" href="/tags/hexo/" title="hexo">hexo</a>
+            
+        </div>
+        
+    </article>
 </div>
 <div class="paginator">
     
         
         
+            <a class="next" href="/2020/05/08/Markdown%E4%BB%A3%E7%A0%81%E5%9D%97%E6%94%AF%E6%8C%81%E7%9A%84%E8%AF%AD%E8%A8%80/">
+                <span class="nav-default">Markdown代码块支持的语言</span>
+                <span class="nav-mobile">下一篇</span>
+                <i class="iconfont icon-next"></i>
+            </a>
+        
     
 </div>
-
+<div id="comment-container"></div>
     </div>
 </div>
 <footer class="footer-social">
